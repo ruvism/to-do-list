@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checked{
+   text-decoration:line-through;
+} 
+
+h1{
+    font-family: 'Pacifico', sans-serif;
+    color: #db6a5b;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;         
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#output{
+    text-align-last: left;
+}
+
+li{
+    list-style: none;
+    padding: 6px 0px;
+}
+
+#novaTarefa,
+button {
+    padding: 3px;
+    border: 1px solid #db6a5b;
+    font-family: 'Montserrat', sans-serif;
+    color: #db6a5b;
+    background-color: transparent;
+}
