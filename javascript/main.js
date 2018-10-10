@@ -1,12 +1,18 @@
 function tarefa(){
     var novaTarefa = document.getElementById('novaTarefa').value;
 
-    var conteudoAtual = document.getElementById('output').innerHTML;
+    if (novaTarefa > ''){
 
-    var novaLinha = '<li onclick="riscar(this)">' + novaTarefa + '<span onclick="fecharLinha(this)"><img src="./error.png"></span>' + '</li>';	
-    output.innerHTML = novaLinha + conteudoAtual;
+        var conteudoAtual = document.getElementById('output').innerHTML;
 
-    document.getElementById('novaTarefa').value = '';
+        var novaLinha = '<li onclick="riscar(this)">' + novaTarefa + '<span onclick="fecharLinha(this)"><img src="./error.png"></span>' + '</li>';	
+        output.innerHTML = novaLinha + conteudoAtual;
+
+        document.getElementById('novaTarefa').value = '';
+    }
+    else{
+        alert('Por favor informar a tarefa!');
+    }
 }
 			
 function riscar(palavra) {
